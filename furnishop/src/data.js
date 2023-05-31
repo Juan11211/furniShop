@@ -1,5 +1,9 @@
-import Chair1 from '../assets/Chair1.png'
-import Table from '../assets/table1.avif'
+import Chair1 from './assets/Chair1.png'
+import Table from './assets/table1.avif'
+import BedImg from './assets/bed.avif'
+import CupboardImg from './assets/cupboard.avif'
+import ChairImg from './assets/chairImg.png'
+import LightingImg from './assets/lighting.avif'
 
 import {
     IoLogoYoutube,
@@ -59,3 +63,27 @@ export const features = {
     },
   };
   
+  export const newInStore = {
+    title: 'New In Store Now',
+    subtitle: 'Get the latest items immediately with promo prices',
+    link: 'Check all',
+    icon: <IoIosArrowRoundForward />,
+    products: [
+      {
+        name: 'chair',
+        image: <ChairImg />,
+      },
+      {
+        name: 'bed',
+        image: <BedImg />,
+      },
+      {
+        name: 'cupboard',
+        image: <CupboardImg />,
+      },
+      {
+        name: 'lighting',
+        image: <LightingImg />,
+      },
+    ],
+  };

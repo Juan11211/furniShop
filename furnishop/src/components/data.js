@@ -1,6 +1,17 @@
 import Chair1 from '../assets/Chair1.png'
 import Table from '../assets/table1.avif'
 
+import {
+    IoLogoYoutube,
+    IoLogoFacebook,
+    IoLogoGithub,
+    IoLogoInstagram,
+    IoMdAddCircle,
+    IoIosCheckmarkCircle,
+    IoIosArrowRoundForward,
+  } from 'react-icons/io';
+  
+  
 export const stats = [
     {
     value: '10',
@@ -20,16 +31,31 @@ export const stats = [
 }, 
 ];
 
-export const features = [
-    {
-      image: <Chair1 />,
-      title: "LE CHAIR",
-      subtitle: "Modern chair without breaking bank | $39.99"
-    },
-    {
-        image: <Table />,
-        title: "LE TABLE",
-        subtitle: "Modern table without breaking bank | $39.99"
+export const features = {
+    image: <Chair1 />,
+    title: 'We Create your home more aesthetic',
+    subtitle:
+      'Furniture power is a software as services for multipurpose business management system',
+    buttonText: 'Show Now',
+    items: [
+      {
+        icon: <IoIosCheckmarkCircle />,
+        title: 'Valuation Services',
+        subtitle:
+          'Sometimes features require a short description.  This can be detailed description',
       },
-
-]
+      {
+        icon: <IoIosCheckmarkCircle />,
+        title: 'Development of Furniture Models',
+        subtitle:
+          'Sometimes features require a short description.  This can be detailed description',
+      },
+    ],
+    feature2: {
+      image: <Table />,
+      title: 'The Best Furniture Manufacturer of your choice',
+      subtitle:
+        'Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.',
+    },
+  };
+  

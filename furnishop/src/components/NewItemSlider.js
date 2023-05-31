@@ -6,14 +6,27 @@ import 'swiper/css/pagination';
 
 function NewItemSlider() {
   return (
-    <Swiper>
+    <Swiper grabCursor={true} breakpoints={{
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 18
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        }
+    }} >
       {newInStore.products.map((product, index) => {
-        return <SwiperSlide key={index}>
-            <div>
+        return (
+        <SwiperSlide className='max-w-[265px]' key={index}>
+            <div className='relative'>
                 <img src={product.image.type} alt='product' />
+                <div className='absolute text-black bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize'>
+                    {product.name}
+                </div>
             </div>
-        </SwiperSlide>;
-      })}
+        </SwiperSlide>
+      )})}
     </Swiper>
   );
 }

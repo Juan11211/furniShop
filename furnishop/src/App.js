@@ -4,6 +4,7 @@ import FeaturesSecond from './components/FeaturesSecond';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import NewItems from './components/NewItems';
+import Products from './components/Products';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features />
     <NewItems /> 
     <FeaturesSecond />
+    <Products />
     </div>
   );
 }
